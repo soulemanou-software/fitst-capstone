@@ -33,7 +33,7 @@ let data =[
     paragraph:'Appreciate various creations applying CC license of artist, organised from Art Center Nabi.'
   },
   {
-    image:'fa-solid fa-masks-theater',
+    image:'fa-solid',
     heading:"CC Exhuibition",
     paragraph:'Appreciate various creations applying CC license of artist, organised from Art Center Nabi.'
   },
@@ -43,22 +43,22 @@ let data =[
     paragraph:'Appreciate various creations applying CC license of artist, organised from Art Center Nabi.'
   },
 ];
-
+const mainProHead = document.querySelector('#procarthead');
+mainProHead.innerHTML='Main Program';
 function Cartdisplay() {
   for (let i = 0; i < data.length; i += 1) {
-    const mainProContent = document.getElementsByClassName('box2ao');
+    const mainProContent = document.getElementById('cartContainer');
     const cart = document.createElement("div");
     cart.classList.add('box2a');
     const divImg = document.createElement("div");
     divImg.classList.add('box2a-img');
     const iconImg = document.createElement("i");
-    const cartattribute = "${data[i].image}";
-    iconImg.classList(cartattribute);
+    iconImg.classList.add('fa-solid');
+    iconImg.classList.add('fa-masks-theater');
     const cartHead = document.createElement("h2");
-    cartHead.innerHTML=`${data[i].heading}`;
+    cartHead.innerHTML=data[i].heading;
     const cartPara = document.createElement("p");
     cartPara.innerHTML = data[i].paragraph;
-
     /* Need to append all the element to it various parent */
     mainProContent.appendChild(cart);
     cart.appendChild(divImg);
@@ -69,3 +69,43 @@ function Cartdisplay() {
   }
 }
 Cartdisplay(data);
+let featureData = [
+  {
+    head:'Yochai Benkler',
+    subHead:'Berkman proffessor of entrepenuerial legal studies at havard law school.',
+    para:'Benkler studies common-based peer production, and '
+  },
+  {
+    head:'Yochai Benkler',
+    subHead:'Berkman proffessor of entrepenuerial legal studies at havard law school.',
+    para:'Benkler studies common-based peer production, and '
+  },
+  {
+    head:'Yochai Benkler',
+    subHead:'Berkman proffessor of entrepenuerial legal studies at havard law school.',
+    para:'Benkler studies common-based peer production, and '
+  },
+  {
+    head:'Yochai Benkler',
+    subHead:'Berkman proffessor of entrepenuerial legal studies at havard law school.',
+    para:'Benkler studies common-based peer production, and '
+  },
+  {
+    head:'Yochai Benkler',
+    subHead:'Berkman proffessor of entrepenuerial legal studies at havard law school.',
+    para:'Benkler studies common-based peer production, and '
+  },
+  {
+    head:'Yochai Benkler',
+    subHead:'Berkman proffessor of entrepenuerial legal studies at havard law school.',
+    para:'Benkler studies common-based peer production, and '
+  },
+];
+function featureDisplay(){
+const featureMain = document.querySelector('.box3a');
+const imgfeature = document.createElement('img');
+imgfeature.classList.add('image');
+
+
+};
+featureDisplay(featureData);

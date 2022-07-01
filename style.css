@@ -66,13 +66,14 @@
 .big {
     font-family: 'poppins', sans-serif;
     font-weight: 500;
-    font-size: 40px;
+    font-size: 10vw;
+    line-height: 2.5rem;
 }
 
 .first {
     border: 3px solid rgb(238, 229, 229);
-    margin-left: 30px;
-    margin-top: 10px;
+    margin-left: 10px;
+
     display: inline-block;
 }
 
@@ -81,20 +82,18 @@
     padding-bottom: 15px;
     letter-spacing: 0.2px;
     padding-left: 15px;
-    width: 400px;
+    width: 21.5rem;
     color: #000;
     background-color: rgb(255, 255, 255);
 }
 
 .second {
-    margin-left: 25px;
-    margin-top: 20px;
+    margin: 20px;
 }
 
 .second h2 {
     font-family: 'poppins', sans-serif;
     font-weight: 700;
-    font-size: 30px;
     color:rgb(68, 63, 63)
 }
 
@@ -138,17 +137,18 @@
 .line {
     border-color: #ed6242;
     width: 50px;
+    margin-bottom: .5rem;
 }
 .box2a {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: .5rem;
+    gap: .3rem;
     padding: .5rem;
     border: 1px solid rgb(71, 65, 65);
     background-color: rgb(43, 40, 40);
-    margin: 1rem;
+    margin: 0.3rem 1rem;
     transition: all 1s ease-out;
 }
 .box2a-img{
@@ -171,11 +171,17 @@
 
 }
 .box2a> p{
+    text-align: start;
     font-size: 1rem;
     max-width: 40vw;
     height: auto;
 }
-
+.feature-head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .forum {
     margin-left: 15px;
@@ -199,36 +205,6 @@
     margin-bottom: 20px;
 }
 
-.box3b {
-    display: flex;
-    justify-content: space-between; 
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.box3b h2 {
-    font-family: 'poppins', sans-serif;
-    font-weight: 500;
-    font-size: 15px;
-}
-
-.box3b h6 {
-    font-family: 'poppins', sans-serif;
-    font-weight: 200;
-    font-size: 15px;
-    color: rgb(245, 141, 104);
-}
-
-.box3b p {
-    font-family: 'poppins', sans-serif;
-    font-weight: 500;
-    font-size: 15px
-}
-
-.box3d {
-    display: flex;
-    flex-direction: row;
-}
 
 .part {
     display: flex;
@@ -281,53 +257,55 @@
 
 .box3a {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
 }
 
 .box3b {
     display: flex;
     flex-direction: row;
     gap: 20px;
-    margin-bottom: 20px;
-    margin-right: 100px;
-    margin-left: 100px;
+    margin-bottom: 25px;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    
 }
 
 .box3b img {
-    width: 80px;
-    height: 100px;
+    width: 20rem;
 }
 
 .card h2 {
     font-family: 'poppins', sans-serif;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 5vw;
+    max-width: auto;
 }
 
 .card h6 {
-    width: 300px;
+    max-width: 70vw;
     font-family: 'poppins', sans-serif;
-    font-weight: 20;
+    font-weight: 500;
     font-size: 10px;
     font-style: italic;
 }
 
 .card p {
     font-family: 'poppins', sans-serif;
-    font-weight: 300;
-    font-size: 15px;
-    width: 350px;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1rem;
+    padding-bottom:1rem;
+    max-width: auto;
+    max-height: 10rem;
     word-spacing: 0.2px;
 }
 
 .secondline {
     border-color: #ed6242;
     width: 40px;
-    margin-left: 600px;
-    margin-top: 5px;
-    margin-bottom: 30px;
 }
-
 .thirdline {
     width: 20px;
     margin-left: 2px;
