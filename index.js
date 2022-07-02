@@ -71,31 +71,37 @@ function Cartdisplay() {
 Cartdisplay(data);
 let featureData = [
   {
+    image: 'images/image1.jfif',
     head:'Yochai Benkler',
     subHead:'Berkman proffessor of entrepenuerial legal studies at havard law school.',
     para:'Benkler studies common-based peer production, and '
   },
   {
+    image: 'images/image1.jfif',
     head:'Yochai Benkler',
     subHead:'Berkman proffessor of entrepenuerial legal studies at havard law school.',
     para:'Benkler studies common-based peer production, and '
   },
   {
+    image: 'images/image1.jfif',
     head:'Yochai Benkler',
     subHead:'Berkman proffessor of entrepenuerial legal studies at havard law school.',
     para:'Benkler studies common-based peer production, and '
   },
   {
+    image: 'images/image1.jfif',
     head:'Yochai Benkler',
     subHead:'Berkman proffessor of entrepenuerial legal studies at havard law school.',
     para:'Benkler studies common-based peer production, and '
   },
   {
+    image: 'images/image1.jfif',
     head:'Yochai Benkler',
     subHead:'Berkman proffessor of entrepenuerial legal studies at havard law school.',
     para:'Benkler studies common-based peer production, and '
   },
   {
+    image: 'images/image1.jfif',
     head:'Yochai Benkler',
     subHead:'Berkman proffessor of entrepenuerial legal studies at havard law school.',
     para:'Benkler studies common-based peer production, and '
@@ -103,9 +109,31 @@ let featureData = [
 ];
 function featureDisplay(){
 const featureMain = document.querySelector('.box3a');
+for(let i=0;i<featureData.length; i++){
+  const cardContent = document.createElement('div');
+cardContent.classList.add('box3b');
 const imgfeature = document.createElement('img');
 imgfeature.classList.add('image');
-
-
+imgfeature.setAttribute("src",featureData[i].image);
+imgfeature.setAttribute("alt","picture of a man");
+const card = document.createElement('div');
+card.classList.add('card');
+const cardHead = document.createElement('h2');
+cardHead.innerHTML= featureData[i].head;
+const cardSubHead = document.createElement('h6');
+cardSubHead.innerHTML= featureData[i].subHead;
+const cardHr = document.createElement('hr');
+cardHr.classList.add('thirdline');
+const paraCard = document.createElement('p');
+paraCard.innerHTML= featureData[i].para;
+//appending all the elemets
+featureMain.appendChild(cardContent);
+cardContent.appendChild(imgfeature);
+cardContent.appendChild(card);
+card.appendChild(cardHead);
+card.appendChild(cardSubHead);
+card.appendChild(cardHr);
+card.appendChild(paraCard);
+}
 };
 featureDisplay(featureData);
